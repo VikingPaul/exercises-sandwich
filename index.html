@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IIFE Sandwich</title>
+</head>
+<body>
+<!-- a section of options for each sandwich part -->
+
+  <section id="breads">
+    <lable><input type="radio" name="bread" id="wheat">Wheat</lable>
+    <lable><input type="radio" name="bread" id="white">White</lable>
+    <lable><input type="radio" name="bread" id="noBread">No bread</lable>
+  </section>
+  <section id="meats">
+    <lable><input type="checkbox" name="meat" id="ham">Ham</lable>
+    <lable><input type="checkbox" name="meat" id="bacon">Bacon</lable>
+    <lable><input type="checkbox" name="meat" id="turkey">Turkey</lable>
+    <lable><input type="checkbox" name="meat" id="chicken">Chicken</lable>
+    <lable><input type="checkbox" name="meat" id="noMeat">No meat</lable>
+  </section>
+  <section id="cheeses">
+    <lable><input type="checkbox" name="cheese" id="swiss">Swiss</lable>
+    <lable><input type="checkbox" name="cheese" id="american">American</lable>
+    <lable><input type="checkbox" name="cheese" id="provolone">Provolone</lable>
+    <lable><input type="checkbox" name="cheese" id="parmesan">Parmesan</lable>
+    <lable><input type="checkbox" name="cheese" id="noCheese">No cheese</lable>
+  </section>
+  <section id="condiments">
+    <lable><input type="checkbox" name="condiment" id="ketchup">Ketchup</lable>
+    <lable><input type="checkbox" name="condiment" id="mustard">Mustard</lable>
+    <lable><input type="checkbox" name="condiment" id="mayo">Mayo</lable>
+    <lable><input type="checkbox" name="condiment" id="butter">Butter</lable>
+    <lable><input type="checkbox" name="condiment" id="noCondiment">No condiments</lable>
+  </section>
+  <section id="veggies">
+    <lable><input type="checkbox" name="veggie" id="lettuce">Lettuce</lable>
+    <lable><input type="checkbox" name="veggie" id="tomato">Tomato</lable>
+    <lable><input type="checkbox" name="veggie" id="onion">Onion</lable>
+    <lable><input type="checkbox" name="veggie" id="noVeggies">No veggies</lable>
+  </section>
+<!-- the ability to select multiple, or zero, choices for each section (such as turkey and bacon, or "no meat") -->
+<!-- an empty DOM element into which the final sandwich order and its cost will be inserted -->
+
+  <div id="sammich">
+    <div id="bread"></div>
+    <div id="meat"></div>
+    <div id="cheese"></div>
+    <div id="cond"></div>
+    <div id="veggie"></div>
+    <div id="price">$0</div>
+  </div>
+  <script src="javascripts/SandwichMaker.js"></script>
+  <script src="javascripts/bread.js"></script>
+  <script src="javascripts/meat.js"></script>
+  <script src="javascripts/cheese.js"></script>
+  <script src="javascripts/condiment.js"></script>
+  <script src="javascripts/veggie.js"></script>
+  <script src="javascripts/dom.js"></script>
+</body>
+</html>
